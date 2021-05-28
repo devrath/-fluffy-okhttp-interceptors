@@ -3,7 +3,7 @@
 
 
 <p align="center">
-<a><img src="https://img.shields.io/badge/Design%20Patterns-Behavioural-silver?style=for-the-badge&logo=kotlin"></a>
+<a><img src="https://img.shields.io/badge/Built%20Using-Kotlin-silver?style=for-the-badge&logo=kotlin"></a>
 <a><img src="https://img.shields.io/badge/Built%20By-Android%20Studio-red?style=for-the-badge&logo=android%20studio"></a>  
 <a><img src="https://img.shields.io/badge/Tool-OkHttp-green?style=for-the-badge&logo=tools"></a>  
 <a><img src="https://img.shields.io/badge/OkHttp%20Interceptors-purple?style=for-the-badge&logo=tools"></a>  
