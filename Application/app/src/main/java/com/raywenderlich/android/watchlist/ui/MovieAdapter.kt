@@ -43,16 +43,15 @@ import com.raywenderlich.android.watchlist.model.MovieModel
 import com.raywenderlich.android.watchlist.RecyclerViewItemClickListener
 import com.raywenderlich.android.watchlist.Utils
 import com.raywenderlich.android.watchlist.databinding.RowMovieViewholderBinding
+import com.raywenderlich.android.watchlist.model.Movie
 
-class MovieAdapter(
-    private val recyclerViewItemClickListener: RecyclerViewItemClickListener
-) : RecyclerView.Adapter<MovieAdapter.MovieViewHolder>() {
+class MovieAdapter() : RecyclerView.Adapter<MovieAdapter.MovieViewHolder>() {
 
-  private val movieList = mutableListOf<MovieModel>()
+  private val movieList = mutableListOf<Movie>()
 
-  fun setCharacterList(characterList: List<MovieModel>) {
+  fun setCharacterList(movies: List<Movie>) {
     this.movieList.clear()
-    this.movieList.addAll(characterList)
+    this.movieList.addAll(movies)
     notifyDataSetChanged()
   }
 
@@ -68,15 +67,11 @@ class MovieAdapter(
     val movie = movieList[position]
     with(holder) {
       Glide.with(moviePosterImageView)
-          .load(Utils.getPostUrl(movie.posterPath))
+          .load(movie.poster)
           .centerCrop()
           .into(moviePosterImageView)
 
-      movieNameTextView.text = movie.title
-
-      rootView.setOnClickListener {
-        recyclerViewItemClickListener.onItemClicked(movie.id)
-      }
+      movieNameTextView.text = movie.id.toString().plus(" ").plus(" Name")
     }
   }
 

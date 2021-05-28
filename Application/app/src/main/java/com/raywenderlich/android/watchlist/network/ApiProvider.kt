@@ -41,7 +41,7 @@ import retrofit2.converter.gson.GsonConverterFactory
 
 object ApiProvider {
 
-  const val API_BASE_URL = "https://api.themoviedb.org"
+  const val API_BASE_URL = "https://raw.githubusercontent.com/devrath/Sample-Data/master/Android-CleanArchitecture-Kotlin/"
 
   private var movieApi: MovieApi? = null
 

@@ -42,6 +42,7 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.raywenderlich.android.watchlist.*
 import com.raywenderlich.android.watchlist.databinding.FragmentMovieListBinding
+import com.raywenderlich.android.watchlist.model.Movie
 import com.raywenderlich.android.watchlist.model.MovieApiResponse
 import com.raywenderlich.android.watchlist.model.MovieModel
 import com.raywenderlich.android.watchlist.network.ApiProvider
@@ -64,29 +65,23 @@ class MovieListFragment: Fragment() {
   override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
     super.onViewCreated(view, savedInstanceState)
 
-    movieAdapter = MovieAdapter(object: RecyclerViewItemClickListener {
-      override fun onItemClicked(movieId: Long) {
-        val directions = MovieListFragmentDirections.actionMovieListFragmentToMovieDetailsFragment(movieId)
-        findNavController().navigate(directions)
-      }
-    })
+    movieAdapter = MovieAdapter()
     binding.movieRecyclerview.adapter = movieAdapter
 
     val movieApi = ApiProvider.getMovieApi(requireContext())
-
-    movieApi.getPopularMovies().enqueue(object : Callback<MovieApiResponse> {
-      override fun onFailure(call: Call<MovieApiResponse>, t: Throwable) {
+    movieApi.movies().enqueue(object : Callback<List<Movie>> {
+      override fun onFailure(call: Call<List<Movie>>, t: Throwable) {
         showErrorState()
       }
 
-      override fun onResponse(call: Call<MovieApiResponse>,
-                              response: Response<MovieApiResponse>) {
+      override fun onResponse(call: Call<List<Movie>>,
+                              response: Response<List<Movie>>) {
         if (response.isSuccessful && response.body() != null) {
           val movies = response.body()!!
-          if (movies.results.isEmpty()) {
+          if (movies.isEmpty()) {
             showEmptyDataState()
           } else {
-            showMovieList(movies.results)
+            showMovieList(movies)
           }
         } else {
           showErrorState()
@@ -102,11 +97,11 @@ class MovieListFragment: Fragment() {
     binding.textview.text = getString(R.string.there_seems_to_be_no_data)
   }
 
-  private fun showMovieList(characterList: List<MovieModel>) {
+  private fun showMovieList(movies: List<Movie>) {
     binding.movieRecyclerview.visibility = View.VISIBLE
     binding.progressBar.visibility = View.GONE
     binding.textview.visibility = View.GONE
-    movieAdapter.setCharacterList(characterList)
+    movieAdapter.setCharacterList(movies)
   }
 
   private fun showErrorState() {
