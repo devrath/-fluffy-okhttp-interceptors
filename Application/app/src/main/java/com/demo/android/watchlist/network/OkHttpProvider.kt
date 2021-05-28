@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2019 Razeware LLC
+ * Copyright (c) 2020 Razeware LLC
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -19,6 +19,10 @@
  * merger, publication, distribution, sublicensing, creation of derivative works,
  * or sale is expressly withheld.
  *
+ * This project and source code may use libraries or frameworks that are
+ * released under various Open-Source licenses. Use of those libraries and
+ * frameworks are governed by their own individual licenses.
+ *
  * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
  * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
  * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
@@ -28,18 +32,40 @@
  * THE SOFTWARE.
  */
 
-package com.raywenderlich.android.watchlist
+package com.demo.android.watchlist.network
 
-import android.app.Application
+import android.content.Context
+import com.demo.android.watchlist.interceptors.AnalyticsInterceptor
+import com.demo.android.watchlist.interceptors.ApiKeyInterceptor
+import okhttp3.OkHttpClient
+import okhttp3.logging.HttpLoggingInterceptor
 import timber.log.Timber
-import timber.log.Timber.DebugTree
+import java.util.concurrent.TimeUnit
 
-class MovieApp: Application() {
-  override fun onCreate() {
-    super.onCreate()
+object OkHttpProvider {
 
-    if (BuildConfig.DEBUG) {
-      Timber.plant(DebugTree())
+  // Timeout for the network requests
+  private const val REQUEST_TIMEOUT = 3L
+
+  private var okHttpClient: OkHttpClient? = null
+
+  fun getOkHttpClient(context: Context): OkHttpClient {
+    return if (okHttpClient == null) {
+      val loggingInterceptor = HttpLoggingInterceptor { message -> Timber.tag("OkHttp").d(message) }
+      loggingInterceptor.level = HttpLoggingInterceptor.Level.BODY
+      loggingInterceptor.redactHeader("x-amz-cf-id")
+
+      val okHttpClient = OkHttpClient.Builder()
+          .readTimeout(REQUEST_TIMEOUT, TimeUnit.SECONDS)
+          .connectTimeout(REQUEST_TIMEOUT, TimeUnit.SECONDS)
+          .addInterceptor(ApiKeyInterceptor())
+          .addInterceptor(AnalyticsInterceptor(context))
+          .addInterceptor(loggingInterceptor)
+          .build()
+      OkHttpProvider.okHttpClient = okHttpClient
+      okHttpClient
+    } else {
+      okHttpClient!!
     }
   }
 }

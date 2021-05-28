@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2020 Razeware LLC
+ * Copyright (c) 2019 Razeware LLC
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -19,10 +19,6 @@
  * merger, publication, distribution, sublicensing, creation of derivative works,
  * or sale is expressly withheld.
  *
- * This project and source code may use libraries or frameworks that are
- * released under various Open-Source licenses. Use of those libraries and
- * frameworks are governed by their own individual licenses.
- *
  * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
  * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
  * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
@@ -32,21 +28,9 @@
  * THE SOFTWARE.
  */
 
-package com.raywenderlich.android.watchlist.model
+package com.demo.android.watchlist
 
-import com.google.gson.annotations.SerializedName
+interface RecyclerViewItemClickListener {
 
-data class MovieDetailsModel(
-    @SerializedName("title")
-    val title: String,
-    @SerializedName("tagline")
-    val tagline: String,
-    @SerializedName("overview")
-    val overview: String,
-    @SerializedName("poster_path")
-    val posterPath: String,
-    @SerializedName("backdrop_path")
-    val backdropPath: String,
-    @SerializedName("runtime")
-    val runtime: Int
-)
+  fun onItemClicked(movieId: Long)
+}

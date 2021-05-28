@@ -39,7 +39,7 @@
 
   <fragment
     android:id="@+id/movieListFragment"
-    android:name="com.raywenderlich.android.watchlist.ui.MovieListFragment"
+    android:name="com.demo.android.watchlist.ui.MovieListFragment"
     android:label="MovieListFragment">
     <action
       android:id="@+id/action_movieListFragment_to_movieDetailsFragment"
@@ -54,7 +54,7 @@
 
   <fragment
     android:id="@+id/movieDetailsFragment"
-    android:name="com.raywenderlich.android.watchlist.ui.MovieDetailsFragment"
+    android:name="com.demo.android.watchlist.ui.MovieDetailsFragment"
     android:label="MovieDetailsFragment">
 
     <argument

@@ -32,19 +32,49 @@
  * THE SOFTWARE.
  */
 
-package com.raywenderlich.android.watchlist.network
+package com.demo.android.watchlist.ui
 
-import com.raywenderlich.android.watchlist.model.Movie
-import retrofit2.Call
-import retrofit2.http.GET
+import android.annotation.SuppressLint
+import android.view.LayoutInflater
+import android.view.ViewGroup
+import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
+import com.demo.android.watchlist.databinding.RowMovieViewholderBinding
+import com.demo.android.watchlist.model.Movie
 
-interface MovieApi {
+class MovieAdapter() : RecyclerView.Adapter<MovieAdapter.MovieViewHolder>() {
 
-  companion object {
-    private const val MOVIES = "movies.json"
+  private val movieList = mutableListOf<Movie>()
+
+  fun setCharacterList(movies: List<Movie>) {
+    this.movieList.clear()
+    this.movieList.addAll(movies)
+    notifyDataSetChanged()
   }
-  
-  @GET(MOVIES)
-  fun movies(): Call<List<Movie>>
 
+  override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MovieViewHolder {
+    val rowMovieViewholderBinding = RowMovieViewholderBinding.inflate(LayoutInflater.from(parent.context), parent, false)
+    return MovieViewHolder(rowMovieViewholderBinding)
+  }
+
+  override fun getItemCount() = movieList.size
+
+  @SuppressLint("DefaultLocale")
+  override fun onBindViewHolder(holder: MovieViewHolder, position: Int) {
+    val movie = movieList[position]
+    with(holder) {
+      Glide.with(moviePosterImageView)
+          .load(movie.poster)
+          .centerCrop()
+          .into(moviePosterImageView)
+
+      movieNameTextView.text = movie.id.toString().plus(" ").plus(" Name")
+    }
+  }
+
+  inner class MovieViewHolder(rowMovieViewholderBinding: RowMovieViewholderBinding) : RecyclerView.ViewHolder(rowMovieViewholderBinding.root) {
+    val movieNameTextView = rowMovieViewholderBinding.movieNameTextview
+    val moviePosterImageView = rowMovieViewholderBinding.moviePosterImageview
+    val rootView = rowMovieViewholderBinding.root
+  }
 }

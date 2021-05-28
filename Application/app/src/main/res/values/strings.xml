@@ -1,5 +1,5 @@
 <resources>
-  <string name="app_name">Watchlist</string>
+  <string name="app_name">Movies</string>
   <string name="name_placeholder">Name: %1$s</string>
   <string name="role_placeholder">Role: %1$s</string>
   <string name="orderOfThePhoenix_placeholder">Order of the Phoenix: %1$s</string>

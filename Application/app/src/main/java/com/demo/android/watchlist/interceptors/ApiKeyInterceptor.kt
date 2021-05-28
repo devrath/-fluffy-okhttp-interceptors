@@ -32,9 +32,9 @@
  * THE SOFTWARE.
  */
 
-package com.raywenderlich.android.watchlist.interceptors
+package com.demo.android.watchlist.interceptors
 
-import com.raywenderlich.android.watchlist.BuildConfig
+import com.demo.android.watchlist.BuildConfig
 import okhttp3.Interceptor
 import okhttp3.Response
 

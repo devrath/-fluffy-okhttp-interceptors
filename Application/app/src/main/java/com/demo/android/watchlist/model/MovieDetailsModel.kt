@@ -32,40 +32,21 @@
  * THE SOFTWARE.
  */
 
-package com.raywenderlich.android.watchlist.network
+package com.demo.android.watchlist.model
 
-import android.content.Context
-import com.raywenderlich.android.watchlist.interceptors.AnalyticsInterceptor
-import com.raywenderlich.android.watchlist.interceptors.ApiKeyInterceptor
-import okhttp3.OkHttpClient
-import okhttp3.logging.HttpLoggingInterceptor
-import timber.log.Timber
-import java.util.concurrent.TimeUnit
+import com.google.gson.annotations.SerializedName
 
-object OkHttpProvider {
-
-  // Timeout for the network requests
-  private const val REQUEST_TIMEOUT = 3L
-
-  private var okHttpClient: OkHttpClient? = null
-
-  fun getOkHttpClient(context: Context): OkHttpClient {
-    return if (okHttpClient == null) {
-      val loggingInterceptor = HttpLoggingInterceptor { message -> Timber.tag("OkHttp").d(message) }
-      loggingInterceptor.level = HttpLoggingInterceptor.Level.BODY
-      loggingInterceptor.redactHeader("x-amz-cf-id")
-
-      val okHttpClient = OkHttpClient.Builder()
-          .readTimeout(REQUEST_TIMEOUT, TimeUnit.SECONDS)
-          .connectTimeout(REQUEST_TIMEOUT, TimeUnit.SECONDS)
-          .addInterceptor(ApiKeyInterceptor())
-          .addInterceptor(AnalyticsInterceptor(context))
-          .addInterceptor(loggingInterceptor)
-          .build()
-      OkHttpProvider.okHttpClient = okHttpClient
-      okHttpClient
-    } else {
-      okHttpClient!!
-    }
-  }
-}
+data class MovieDetailsModel(
+    @SerializedName("title")
+    val title: String,
+    @SerializedName("tagline")
+    val tagline: String,
+    @SerializedName("overview")
+    val overview: String,
+    @SerializedName("poster_path")
+    val posterPath: String,
+    @SerializedName("backdrop_path")
+    val backdropPath: String,
+    @SerializedName("runtime")
+    val runtime: Int
+)

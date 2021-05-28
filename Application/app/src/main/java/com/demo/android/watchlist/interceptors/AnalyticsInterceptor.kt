@@ -32,14 +32,13 @@
  * THE SOFTWARE.
  */
 
-package com.raywenderlich.android.watchlist.interceptors
+package com.demo.android.watchlist.interceptors
 
 import android.content.Context
 import android.os.Build
 import okhttp3.Interceptor
 import okhttp3.Request
 import okhttp3.Response
-import java.util.*
 
 class AnalyticsInterceptor(private val context: Context): Interceptor {
 

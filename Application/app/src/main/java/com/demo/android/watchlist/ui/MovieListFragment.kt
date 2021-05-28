@@ -32,20 +32,17 @@
  * THE SOFTWARE.
  */
 
-package com.raywenderlich.android.watchlist.ui
+package com.demo.android.watchlist.ui
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import androidx.navigation.fragment.findNavController
-import com.raywenderlich.android.watchlist.*
-import com.raywenderlich.android.watchlist.databinding.FragmentMovieListBinding
-import com.raywenderlich.android.watchlist.model.Movie
-import com.raywenderlich.android.watchlist.model.MovieApiResponse
-import com.raywenderlich.android.watchlist.model.MovieModel
-import com.raywenderlich.android.watchlist.network.ApiProvider
+import com.demo.android.watchlist.*
+import com.demo.android.watchlist.databinding.FragmentMovieListBinding
+import com.demo.android.watchlist.model.Movie
+import com.demo.android.watchlist.network.ApiProvider
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
