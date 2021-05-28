@@ -1,2 +1,15 @@
-# -fluffy-okhttp-interceptors
-In this project we learn how to use Okhttp interceptors for network requests, log them and modify them as required
+# fluffy-okhttp-interceptors
+![Banner](https://github.com/devrath/devrath/blob/master/images/Banner.png)
+
+
+<p align="center">
+<a><img src="https://img.shields.io/badge/Design%20Patterns-Behavioural-silver?style=for-the-badge&logo=kotlin"></a>
+<a><img src="https://img.shields.io/badge/Built%20By-Android%20Studio-red?style=for-the-badge&logo=android%20studio"></a>  
+<a><img src="https://img.shields.io/badge/Tool-OkHttp-green?style=for-the-badge&logo=tools"></a>  
+<a><img src="https://img.shields.io/badge/OkHttp%20Interceptors-purple?style=for-the-badge&logo=tools"></a>  
+</p>
+
+<p align="center"><a><img align="left" src="https://github.com/devrath/devrath/blob/master/images/description.png" width="60" height="60" alt="Description" title="Description"></a></p> 
+In this project we learn how to use Okhttp interceptors for network requests, log them and modify them as required. Check wiki tab above to access the documentation 
+
+---
