@@ -39,8 +39,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import com.application.demo.R
+import com.application.demo.databinding.FragmentMovieListBinding
 import com.demo.android.watchlist.*
-import com.demo.android.watchlist.databinding.FragmentMovieListBinding
 import com.demo.android.watchlist.model.Movie
 import com.demo.android.watchlist.network.ApiProvider
 import retrofit2.Call

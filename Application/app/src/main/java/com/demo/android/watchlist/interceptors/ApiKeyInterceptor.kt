@@ -34,7 +34,7 @@
 
 package com.demo.android.watchlist.interceptors
 
-import com.demo.android.watchlist.BuildConfig
+import com.application.demo.BuildConfig
 import okhttp3.Interceptor
 import okhttp3.Response
 

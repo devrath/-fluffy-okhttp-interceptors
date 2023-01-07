@@ -36,7 +36,7 @@ package com.demo.android.watchlist.ui
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import com.demo.android.watchlist.R
+import com.application.demo.R
 
 /**
  * Main Screen

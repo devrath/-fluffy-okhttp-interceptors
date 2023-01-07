@@ -38,8 +38,8 @@ import android.annotation.SuppressLint
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.application.demo.databinding.RowMovieViewholderBinding
 import com.bumptech.glide.Glide
-import com.demo.android.watchlist.databinding.RowMovieViewholderBinding
 import com.demo.android.watchlist.model.Movie
 
 class MovieAdapter() : RecyclerView.Adapter<MovieAdapter.MovieViewHolder>() {
