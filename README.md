@@ -1,5 +1,7 @@
 # fluffy-okhttp-interceptors
-![Banner](https://github.com/devrath/fluffy-okhttp-interceptors/blob/main/assets/Banner.png)
+<p align="center">
+<a><img src="https://github.com/devrath/fluffy-okhttp-interceptors/blob/main/assets/Banner.png"></a>
+</p>
 
 
 <p align="center">
@@ -10,7 +12,7 @@
 </p>
 
 <p align="center"><a><img align="left" src="https://github.com/devrath/devrath/blob/master/images/description.png" width="60" height="60" alt="Description" title="Description"></a></p> 
-In this project we learn how to use Okhttp interceptors for network requests, log them and modify them as required. Check wiki tab above to access the documentation 
+In this project we learn how to use Okhttp interceptors for network requests, log them and modify them as required. 
 
 ---
 
