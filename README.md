@@ -1,5 +1,5 @@
 # fluffy-okhttp-interceptors
-![Banner](https://github.com/devrath/devrath/blob/master/images/Banner.png)
+![Banner](https://github.com/devrath/fluffy-okhttp-interceptors/blob/main/assets/Banner.png)
 
 
 <p align="center">
