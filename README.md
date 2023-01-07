@@ -17,12 +17,14 @@
   
 | Topics |
 | ------ |
-| [```What is OkHttp Interceptor```](https://github.com/devrath/fluffy-okhttp-interceptors/wiki/What-is-OkHttp-Interceptor) |
-| [```Types of Interceptors```](https://github.com/devrath/fluffy-okhttp-interceptors/wiki/Types-of-Interceptors) |
-| [```HttpLoggingInterceptor```](https://github.com/devrath/fluffy-okhttp-interceptors/wiki/HttpLoggingInterceptor) |
-| [```What is Analytics Interceptor```](https://github.com/devrath/fluffy-okhttp-interceptors/wiki/What-is-Analytics-Interceptor) |
-| [```What is ApiKey or tolken Interceptor```](https://github.com/devrath/fluffy-okhttp-interceptors/wiki/What-is-ApiKey-or-tolken-Interceptor) |
-  
+| [```𝚆𝚑𝚊𝚝 𝚒𝚜 𝙾𝚔𝙷𝚝𝚝𝚙 𝙸𝚗𝚝𝚎𝚛𝚌𝚎𝚙𝚝𝚘𝚛```](https://github.com/devrath/fluffy-okhttp-interceptors/wiki/What-is-OkHttp-Interceptor) |
+| [```𝙲𝚑𝚊𝚒𝚗𝚒𝚗𝚐 𝙾𝚔𝙷𝚝𝚝𝚙 𝚒𝚗𝚝𝚎𝚛𝚌𝚎𝚙𝚝𝚘𝚛```](https://github.com/devrath/fluffy-okhttp-interceptors/wiki/Types-of-Interceptors) |
+| [```𝚆𝚑𝚊𝚝 𝚊𝚛𝚎 𝚝𝚑𝚎 𝚍𝚒𝚏𝚏𝚎𝚛𝚎𝚗𝚝 𝚝𝚢𝚙𝚎𝚜 𝚘𝚏 𝙸𝚗𝚝𝚎𝚛𝚌𝚎𝚙𝚝𝚘𝚛𝚜```](https://github.com/devrath/fluffy-okhttp-interceptors/wiki/HttpLoggingInterceptor) |
+| [```𝚆𝚑𝚊𝚝 𝚒𝚜 𝚊𝚗 𝙰𝚗𝚊𝚕𝚢𝚝𝚒𝚌𝚜 𝙸𝚗𝚝𝚎𝚛𝚌𝚎𝚙𝚝𝚘𝚛```](https://github.com/devrath/fluffy-okhttp-interceptors/wiki/What-is-Analytics-Interceptor) |
+| [```𝚆𝚑𝚊𝚝 𝚒𝚜 𝚊𝚗 𝙰𝙿𝙸 𝚔𝚎𝚢 𝙸𝚗𝚝𝚎𝚛𝚌𝚎𝚙𝚝𝚘𝚛```](https://github.com/devrath/fluffy-okhttp-interceptors/wiki/What-is-ApiKey-or-tolken-Interceptor) |
+| [```𝚆𝚑𝚊𝚝 𝚒𝚜 𝚊𝚗 𝙷𝚃𝚃𝙿 𝙻𝚘𝚐𝚐𝚒𝚗𝚐 𝙸𝚗𝚝𝚎𝚛𝚌𝚎𝚙𝚝𝚘𝚛```](https://github.com/devrath/fluffy-okhttp-interceptors/wiki/What-is-ApiKey-or-tolken-Interceptor) |
+| [```𝙰𝚍𝚍 𝚝𝚑𝚎 𝚎𝚗𝚝𝚛𝚢 𝚒𝚗 𝚐𝚛𝚊𝚍𝚕𝚎```](https://github.com/devrath/fluffy-okhttp-interceptors/wiki/What-is-ApiKey-or-tolken-Interceptor) |
+
 </div>
 
 
@@ -146,11 +148,6 @@ val okHttpClient = OkHttpClient.Builder()
 * This is the ability to remove certain information from logging in to the terminal.
 * For example, we can remove the API key getting logged if it is sent in a request to the server.
 
-### `𝙰𝚍𝚍 𝚝𝚑𝚎 𝚎𝚗𝚝𝚛𝚢 𝚒𝚗 𝚐𝚛𝚊𝚍𝚕𝚎`
-```gradle
-implementation "com.squareup.okhttp3:logging-interceptor:4.9.0"
-```
-
 ### `𝙴𝚡𝚊𝚖𝚙𝚕𝚎` 
 
 * Add the code 
@@ -187,6 +184,11 @@ object OkHttpProvider {
     }
   }
 }
+```
+
+## `𝙰𝚍𝚍 𝚝𝚑𝚎 𝚎𝚗𝚝𝚛𝚢 𝚒𝚗 𝚐𝚛𝚊𝚍𝚕𝚎`
+```gradle
+implementation "com.squareup.okhttp3:logging-interceptor:4.9.0"
 ```
 
 
