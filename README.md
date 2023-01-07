@@ -17,13 +17,12 @@
   
 | Topics |
 | ------ |
-| [```𝚆𝚑𝚊𝚝 𝚒𝚜 𝙾𝚔𝙷𝚝𝚝𝚙 𝙸𝚗𝚝𝚎𝚛𝚌𝚎𝚙𝚝𝚘𝚛```](https://github.com/devrath/fluffy-okhttp-interceptors/wiki/What-is-OkHttp-Interceptor) |
-| [```𝙲𝚑𝚊𝚒𝚗𝚒𝚗𝚐 𝙾𝚔𝙷𝚝𝚝𝚙 𝚒𝚗𝚝𝚎𝚛𝚌𝚎𝚙𝚝𝚘𝚛```](https://github.com/devrath/fluffy-okhttp-interceptors/wiki/Types-of-Interceptors) |
-| [```𝚆𝚑𝚊𝚝 𝚊𝚛𝚎 𝚝𝚑𝚎 𝚍𝚒𝚏𝚏𝚎𝚛𝚎𝚗𝚝 𝚝𝚢𝚙𝚎𝚜 𝚘𝚏 𝙸𝚗𝚝𝚎𝚛𝚌𝚎𝚙𝚝𝚘𝚛𝚜```](https://github.com/devrath/fluffy-okhttp-interceptors/wiki/HttpLoggingInterceptor) |
-| [```𝚆𝚑𝚊𝚝 𝚒𝚜 𝚊𝚗 𝙰𝚗𝚊𝚕𝚢𝚝𝚒𝚌𝚜 𝙸𝚗𝚝𝚎𝚛𝚌𝚎𝚙𝚝𝚘𝚛```](https://github.com/devrath/fluffy-okhttp-interceptors/wiki/What-is-Analytics-Interceptor) |
-| [```𝚆𝚑𝚊𝚝 𝚒𝚜 𝚊𝚗 𝙰𝙿𝙸 𝚔𝚎𝚢 𝙸𝚗𝚝𝚎𝚛𝚌𝚎𝚙𝚝𝚘𝚛```](https://github.com/devrath/fluffy-okhttp-interceptors/wiki/What-is-ApiKey-or-tolken-Interceptor) |
-| [```𝚆𝚑𝚊𝚝 𝚒𝚜 𝚊𝚗 𝙷𝚃𝚃𝙿 𝙻𝚘𝚐𝚐𝚒𝚗𝚐 𝙸𝚗𝚝𝚎𝚛𝚌𝚎𝚙𝚝𝚘𝚛```](https://github.com/devrath/fluffy-okhttp-interceptors/wiki/What-is-ApiKey-or-tolken-Interceptor) |
-| [```𝙰𝚍𝚍 𝚝𝚑𝚎 𝚎𝚗𝚝𝚛𝚢 𝚒𝚗 𝚐𝚛𝚊𝚍𝚕𝚎```](https://github.com/devrath/fluffy-okhttp-interceptors/wiki/What-is-ApiKey-or-tolken-Interceptor) |
+| [```𝚆𝚑𝚊𝚝 𝚒𝚜 𝙾𝚔𝙷𝚝𝚝𝚙 𝙸𝚗𝚝𝚎𝚛𝚌𝚎𝚙𝚝𝚘𝚛```](https://github.com/devrath/fluffy-okhttp-interceptors/blob/main/README.md#%F0%9D%9A%86%F0%9D%9A%91%F0%9D%9A%8A%F0%9D%9A%9D-%F0%9D%9A%92%F0%9D%9A%9C-%F0%9D%99%BE%F0%9D%9A%94%F0%9D%99%B7%F0%9D%9A%9D%F0%9D%9A%9D%F0%9D%9A%99-%F0%9D%99%B8%F0%9D%9A%97%F0%9D%9A%9D%F0%9D%9A%8E%F0%9D%9A%9B%F0%9D%9A%8C%F0%9D%9A%8E%F0%9D%9A%99%F0%9D%9A%9D%F0%9D%9A%98%F0%9D%9A%9B) |
+| [```𝙲𝚑𝚊𝚒𝚗𝚒𝚗𝚐 𝙾𝚔𝙷𝚝𝚝𝚙 𝚒𝚗𝚝𝚎𝚛𝚌𝚎𝚙𝚝𝚘𝚛```](https://github.com/devrath/fluffy-okhttp-interceptors/blob/main/README.md#%F0%9D%99%B2%F0%9D%9A%91%F0%9D%9A%8A%F0%9D%9A%92%F0%9D%9A%97%F0%9D%9A%92%F0%9D%9A%97%F0%9D%9A%90-%F0%9D%99%BE%F0%9D%9A%94%F0%9D%99%B7%F0%9D%9A%9D%F0%9D%9A%9D%F0%9D%9A%99-%F0%9D%9A%92%F0%9D%9A%97%F0%9D%9A%9D%F0%9D%9A%8E%F0%9D%9A%9B%F0%9D%9A%8C%F0%9D%9A%8E%F0%9D%9A%99%F0%9D%9A%9D%F0%9D%9A%98%F0%9D%9A%9B) |
+| [```𝚆𝚑𝚊𝚝 𝚊𝚛𝚎 𝚝𝚑𝚎 𝚍𝚒𝚏𝚏𝚎𝚛𝚎𝚗𝚝 𝚝𝚢𝚙𝚎𝚜 𝚘𝚏 𝙸𝚗𝚝𝚎𝚛𝚌𝚎𝚙𝚝𝚘𝚛𝚜```](https://github.com/devrath/fluffy-okhttp-interceptors/blob/main/README.md#%F0%9D%9A%86%F0%9D%9A%91%F0%9D%9A%8A%F0%9D%9A%9D-%F0%9D%9A%8A%F0%9D%9A%9B%F0%9D%9A%8E-%F0%9D%9A%9D%F0%9D%9A%91%F0%9D%9A%8E-%F0%9D%9A%8D%F0%9D%9A%92%F0%9D%9A%8F%F0%9D%9A%8F%F0%9D%9A%8E%F0%9D%9A%9B%F0%9D%9A%8E%F0%9D%9A%97%F0%9D%9A%9D-%F0%9D%9A%9D%F0%9D%9A%A2%F0%9D%9A%99%F0%9D%9A%8E%F0%9D%9A%9C-%F0%9D%9A%98%F0%9D%9A%8F-%F0%9D%99%B8%F0%9D%9A%97%F0%9D%9A%9D%F0%9D%9A%8E%F0%9D%9A%9B%F0%9D%9A%8C%F0%9D%9A%8E%F0%9D%9A%99%F0%9D%9A%9D%F0%9D%9A%98%F0%9D%9A%9B%F0%9D%9A%9C) |
+| [```𝚆𝚑𝚊𝚝 𝚒𝚜 𝚊𝚗 𝙰𝚗𝚊𝚕𝚢𝚝𝚒𝚌𝚜 𝙸𝚗𝚝𝚎𝚛𝚌𝚎𝚙𝚝𝚘𝚛```](https://github.com/devrath/fluffy-okhttp-interceptors/blob/main/README.md#%F0%9D%9A%86%F0%9D%9A%91%F0%9D%9A%8A%F0%9D%9A%9D-%F0%9D%9A%92%F0%9D%9A%9C-%F0%9D%9A%8A%F0%9D%9A%97-%F0%9D%99%B0%F0%9D%9A%97%F0%9D%9A%8A%F0%9D%9A%95%F0%9D%9A%A2%F0%9D%9A%9D%F0%9D%9A%92%F0%9D%9A%8C%F0%9D%9A%9C-%F0%9D%99%B8%F0%9D%9A%97%F0%9D%9A%9D%F0%9D%9A%8E%F0%9D%9A%9B%F0%9D%9A%8C%F0%9D%9A%8E%F0%9D%9A%99%F0%9D%9A%9D%F0%9D%9A%98%F0%9D%9A%9B) |
+| [```𝚆𝚑𝚊𝚝 𝚒𝚜 𝚊𝚗 𝙰𝙿𝙸 𝚔𝚎𝚢 𝙸𝚗𝚝𝚎𝚛𝚌𝚎𝚙𝚝𝚘𝚛```](https://github.com/devrath/fluffy-okhttp-interceptors/blob/main/README.md#%F0%9D%9A%86%F0%9D%9A%91%F0%9D%9A%8A%F0%9D%9A%9D-%F0%9D%9A%92%F0%9D%9A%9C-%F0%9D%9A%8A%F0%9D%9A%97-%F0%9D%99%B0%F0%9D%99%BF%F0%9D%99%B8-%F0%9D%9A%94%F0%9D%9A%8E%F0%9D%9A%A2-%F0%9D%99%B8%F0%9D%9A%97%F0%9D%9A%9D%F0%9D%9A%8E%F0%9D%9A%9B%F0%9D%9A%8C%F0%9D%9A%8E%F0%9D%9A%99%F0%9D%9A%9D%F0%9D%9A%98%F0%9D%9A%9B) |
+| [```𝚆𝚑𝚊𝚝 𝚒𝚜 𝚊𝚗 𝙷𝚃𝚃𝙿 𝙻𝚘𝚐𝚐𝚒𝚗𝚐 𝙸𝚗𝚝𝚎𝚛𝚌𝚎𝚙𝚝𝚘𝚛```](https://github.com/devrath/fluffy-okhttp-interceptors/blob/main/README.md#%F0%9D%9A%86%F0%9D%9A%91%F0%9D%9A%8A%F0%9D%9A%9D-%F0%9D%9A%92%F0%9D%9A%9C-%F0%9D%9A%8A%F0%9D%9A%97-%F0%9D%99%B7%F0%9D%9A%83%F0%9D%9A%83%F0%9D%99%BF-%F0%9D%99%BB%F0%9D%9A%98%F0%9D%9A%90%F0%9D%9A%90%F0%9D%9A%92%F0%9D%9A%97%F0%9D%9A%90-%F0%9D%99%B8%F0%9D%9A%97%F0%9D%9A%9D%F0%9D%9A%8E%F0%9D%9A%9B%F0%9D%9A%8C%F0%9D%9A%8E%F0%9D%9A%99%F0%9D%9A%9D%F0%9D%9A%98%F0%9D%9A%9B) |
 
 </div>
 
@@ -184,11 +183,6 @@ object OkHttpProvider {
     }
   }
 }
-```
-
-## `𝙰𝚍𝚍 𝚝𝚑𝚎 𝚎𝚗𝚝𝚛𝚢 𝚒𝚗 𝚐𝚛𝚊𝚍𝚕𝚎`
-```gradle
-implementation "com.squareup.okhttp3:logging-interceptor:4.9.0"
 ```
 
 
