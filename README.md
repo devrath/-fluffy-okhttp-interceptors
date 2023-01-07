@@ -34,14 +34,14 @@
 
 </div>
 
-## `What is OkHttp Interceptor`
+## `𝚆𝚑𝚊𝚝 𝚒𝚜 𝙾𝚔𝙷𝚝𝚝𝚙 𝙸𝚗𝚝𝚎𝚛𝚌𝚎𝚙𝚝𝚘𝚛`
 * OkHttp is a mechanism that helps you `monitor` and re-write network calls.
 * In the image below we can see that a call is sent from the application **`->`** Then it is received by the interceptor and modified **`->`** Then further modified call is received at the server.
 <p align="center">
   <img src="https://github.com/devrath/fluffy-okhttp-interceptors/blob/main/assets/interceptor1.png">
 </p>
 
-## Chaining OkHttp interceptor
+## `𝙲𝚑𝚊𝚒𝚗𝚒𝚗𝚐 𝙾𝚔𝙷𝚝𝚝𝚙 𝚒𝚗𝚝𝚎𝚛𝚌𝚎𝚙𝚝𝚘𝚛`
 * We can chain multiple interceptors and modify the request
 * Order of the chaining is important
 * Okhttp keeps a list of interceptors and processes them in the same order in which they are added
@@ -49,7 +49,7 @@
   <img src="https://github.com/devrath/fluffy-okhttp-interceptors/blob/main/assets/interceptor2.png">
 </p>
 
-## What are the different types of Interceptors
+## `𝚆𝚑𝚊𝚝 𝚊𝚛𝚎 𝚝𝚑𝚎 𝚍𝚒𝚏𝚏𝚎𝚛𝚎𝚗𝚝 𝚝𝚢𝚙𝚎𝚜 𝚘𝚏 𝙸𝚗𝚝𝚎𝚛𝚌𝚎𝚙𝚝𝚘𝚛𝚜`
 There are two types of interceptors 
 * Application Interceptors
 * Network Interceptors
@@ -62,14 +62,14 @@ There are two types of interceptors
 | The application interceptors are the type of interceptors that are found between the application and the `okhttp module`. | The network interceptors are the type of interceptors that are found between the `okhttp module` and `remote server`.|
 | They are not concerned with the intermediate responses and focus on the final response sent to the application. | They are concerned with the intermediary responses from the time of application making the call and receiving the final response. |
 
-## What is an Analytics Interceptor
+## `𝚆𝚑𝚊𝚝 𝚒𝚜 𝚊𝚗 𝙰𝚗𝚊𝚕𝚢𝚝𝚒𝚌𝚜 𝙸𝚗𝚝𝚎𝚛𝚌𝚎𝚙𝚝𝚘𝚛`
 * Even here we customize the regular interceptor to send certain specific user data to the server on each API request 
 
-### Use case 
+### `𝚄𝚜𝚎 𝚌𝚊𝚜𝚎`
 * Suppose again if we are sending information like `Device-ID`, `OS-version` etc to the server to understand the customer who is using the API service.
 * Now again instead of sending these details which can be of any length, we can send it from one place having a common interceptor
 
-### Example 
+### `𝙴𝚡𝚊𝚖𝚙𝚕𝚎`
 ```kotlin
 class AnalyticsInterceptor(private val context: Context): Interceptor {
 
@@ -96,16 +96,16 @@ class AnalyticsInterceptor(private val context: Context): Interceptor {
 }
 ```
 
-## What is an API key Interceptor
+## `𝚆𝚑𝚊𝚝 𝚒𝚜 𝚊𝚗 𝙰𝙿𝙸 𝚔𝚎𝚢 𝙸𝚗𝚝𝚎𝚛𝚌𝚎𝚙𝚝𝚘𝚛`
 * There is no such special thing as `ApiKey` or `tolken` Interceptor.
 * We customize the interceptor in such a way 
 
-### Use case 
+### `𝚄𝚜𝚎 𝚌𝚊𝚜𝚎` 
 * Suppose in every API request we want to pass an auth token to the server in the header.
 * We need not have to pass while creating every API request.
 * Instead of it we can pass it in a custom interceptor 
 
-### Example 
+### `𝙴𝚡𝚊𝚖𝚙𝚕𝚎` 
 ```kotlin
 class ApiKeyInterceptor: Interceptor {
 
@@ -135,23 +135,23 @@ val okHttpClient = OkHttpClient.Builder()
 .addInterceptor(ApiKeyInterceptor()) 
 ```
 
-## What is an `HTTP Logging Interceptor`
+## `𝚆𝚑𝚊𝚝 𝚒𝚜 𝚊𝚗 𝙷𝚃𝚃𝙿 𝙻𝚘𝚐𝚐𝚒𝚗𝚐 𝙸𝚗𝚝𝚎𝚛𝚌𝚎𝚙𝚝𝚘𝚛`
 * The HTTP Logging Interceptor is an interceptor that helps to log all the HTTP requests that are being sent to the server. 
 * It also can log all the responses that are sent from the server to the application.
 
-### How useful is HTTP logging interceptor
+### `𝙷𝚘𝚠 𝚞𝚜𝚎𝚏𝚞𝚕 𝚒𝚜 𝙷𝚃𝚃𝙿 𝚕𝚘𝚐𝚐𝚒𝚗𝚐 𝚒𝚗𝚝𝚎𝚛𝚌𝚎𝚙𝚝𝚘𝚛`
 * It is helpful in debugging the application on network-related issues when building the application.
 
-### What is `RedactHeader` in HTTP logging interceptor. 
+### `𝚆𝚑𝚊𝚝 𝚒𝚜 𝚁𝚎𝚍𝚊𝚌𝚝𝙷𝚎𝚊𝚍𝚎𝚛 𝚒𝚗 𝙷𝚃𝚃𝙿 𝚕𝚘𝚐𝚐𝚒𝚗𝚐 𝚒𝚗𝚝𝚎𝚛𝚌𝚎𝚙𝚝𝚘𝚛.`
 * This is the ability to remove certain information from logging in to the terminal.
 * For example, we can remove the API key getting logged if it is sent in a request to the server.
 
-### Add the entry in gradle
+### `𝙰𝚍𝚍 𝚝𝚑𝚎 𝚎𝚗𝚝𝚛𝚢 𝚒𝚗 𝚐𝚛𝚊𝚍𝚕𝚎`
 ```gradle
 implementation "com.squareup.okhttp3:logging-interceptor:4.9.0"
 ```
 
-### Example 
+### `𝙴𝚡𝚊𝚖𝚙𝚕𝚎` 
 
 * Add the code 
 ```kotlin
