@@ -1,4 +1,5 @@
-# 𝚏𝚕𝚞𝚏𝚏𝚢-𝚘𝚔𝚑𝚝𝚝𝚙-𝚒𝚗𝚝𝚎𝚛𝚌𝚎𝚙𝚝𝚘𝚛𝚜
+<h1 align="center">𝚏𝚕𝚞𝚏𝚏𝚢-𝚘𝚔𝚑𝚝𝚝𝚙-𝚒𝚗𝚝𝚎𝚛𝚌𝚎𝚙𝚝𝚘𝚛𝚜 📡</h1>
+
 <p align="center">
 <a><img src="https://github.com/devrath/fluffy-okhttp-interceptors/blob/main/assets/Banner.png"></a>
 </p>
