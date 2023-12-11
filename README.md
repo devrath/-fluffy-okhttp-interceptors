@@ -11,6 +11,11 @@
 <a><img src="https://img.shields.io/badge/OkHttp%20Interceptors-purple?style=for-the-badge&logo=tools"></a>  
 </p>
 
+
+<p align="center">
+<a>📡 𝙷𝚘𝚠 𝚝𝚘 𝚞𝚜𝚎 𝙾𝚔𝚑𝚝𝚝𝚙 𝚒𝚗𝚝𝚎𝚛𝚌𝚎𝚙𝚝𝚘𝚛𝚜 𝚏𝚘𝚛 𝚗𝚎𝚝𝚠𝚘𝚛𝚔 𝚛𝚎𝚚𝚞𝚎𝚜𝚝𝚜, 𝚕𝚘𝚐 𝚝𝚑𝚎𝚖, 𝚊𝚗𝚍 𝚖𝚘𝚍𝚒𝚏𝚢 𝚝𝚑𝚎𝚖 𝚊𝚜 𝚛𝚎𝚚𝚞𝚒𝚛𝚎𝚍 𝚒𝚗 𝙰𝚗𝚍𝚛𝚘𝚒𝚍</a>
+</p>
+
 ---
 
 <div align="center">
