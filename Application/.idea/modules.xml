@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Watchlist.iml" filepath="$PROJECT_DIR$/.idea/modules/Watchlist.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Watchlist.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Watchlist.app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Watchlist.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Watchlist.app.androidTest.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Watchlist.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Watchlist.app.main.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Watchlist.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Watchlist.app.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Movies.iml" filepath="$PROJECT_DIR$/.idea/modules/Movies.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Movies.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Movies.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Movies.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Movies.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Movies.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Movies.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Movies.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Movies.app.unitTest.iml" />
     </modules>
   </component>
 </project>
